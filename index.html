@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de gorjeta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div>
+      <h1 class="title">Calculadora de Gorjeta</h1>
+    </div>
+    <form class="Form" id="form">
+      <label for="total" class="label-total">Quanto ficou a conta?</label>
+      <p class="valor-total">
+        R$: <input type="number" name="total" id="total" placeholder="Valor" min="10" required>
+      </p>
+
+      <label class="label-gorjeta" for="gorjeta"> Como foi o serviço?</label>
+      <select name="gorejeta" id="gorjeta">
+        <option disable selected>-- Escolha uma opção --</option>
+        <option value="30">30% - incrivel</option>
+        <option value="20">20% - Ótimo</option>
+        <option value="15">15% - Aceitavel</option>
+        <option value="10">10% - Ruim</option>
+      </select>
+
+      <label for="people">
+        Quantas pessoas vão dividir a conta?
+      </label>
+
+      <div class="div-pessoas"  >
+        <input type="number" placeholder="0" name="people" id="people" class="formInput" required="" min="1"> pessoa(s)
+      </div>
+
+      <button id="btn-calcular">Calcular!</button>
+      <hr>
+      <div id="total-pessoa">
+
+      </div>
+
+    </form>
+  </div>
+<script src="script.js"></script>
+</body>
+
+</html>

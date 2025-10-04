@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2C303D;
+  color: #2C303D;
+  
+}
+
+label{
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+
+#container{
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column; 
+  margin-top: 100px;
+  border-radius: 10px;
+  background-color: #F7F7F7 ;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+
+
+.title{
+  background-color:#DCDCDC  ;
+  padding: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+ font-size: 2em;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+
+.valor-total{
+  font-size: 1.1em;
+  
+}
+
+.valor-total > input{
+  width: 100px;
+  border-radius: 10px;
+  border: solid 1px #696969 ;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+input:focus{
+  outline-color: #696969 ;
+}
+
+select{
+  width: 200px;
+  padding: 2px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  
+  outline: #696969;
+  
+}
+
+#people{
+  width: 50px;
+  border-radius: 5px;
+  padding: 3px;
+  
+  margin-bottom: 20px;
+  border: solid 1px #696969 ;
+}
+
+button{
+  margin: 0 auto;
+  padding: 10px;
+  width: 50%;  
+  border-radius: 5px;
+  
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  
+  color: #1F1F1F;
+  border: solid 1px #696969;
+  background-color: transparent;
+  
+}
+
+button:hover{
+  transition: box-shadow 0.5s ease-in-out;
+  
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+hr{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border: 1px solid  #2C303D;;
+}
+
+#total-pessoa{
+  padding: 5px 10px;
+  font-weight: bold;
+  text-align: center;
+  
+  
+}
+
+#total-pessoa p
+ {
+  font-size: 1.2em;
+  
+  color: #1F1F1F;
+  
+}
+
